@@ -9,6 +9,8 @@ class PaintingsController < ApplicationController
     @paintings = Painting.all
   end
 
+  def contact; end
+
   def new
     @paintings = Painting.all
     @painting = Painting.new
@@ -26,6 +28,16 @@ class PaintingsController < ApplicationController
         format.html do
           redirect_to upload_path, alert: 'Shit... something went wrong'
         end
+      end
+    end
+  end
+
+  def destroy
+    @painting.destroy
+
+    respond_to do |format|
+      format.html do
+        redirect_to accounts_path, notice: 'Removed!'
       end
     end
   end
