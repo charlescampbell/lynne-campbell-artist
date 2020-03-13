@@ -1,0 +1,40 @@
+Style/Documentation:
+  Enabled: false
+
+Style/MixinUsage:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Metrics/ClassLength:
+  Exclude:
+    - 'app/controllers/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/*/*'
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+
+Metrics/MethodLength:
+  Max: 50
+
+Layout/LineLength:
+  Exclude:
+    - 'db/migrate/*'
+    - 'config/routes.rb'
