@@ -1,1 +1,13 @@
-show
+<div class="page-section">
+  <div class="container">
+    <%= link_to '< back', paintings_path, data: { turbolinks: false } %>
+    <hr>
+    <%= image_tag(@painting.image.url) %>
+    <hr>
+    <span>
+      <h2><%= "#{@painting.name} | £#{@painting.price}" %></h2>
+      <p><%= @painting.description %></p>
+      <%= link_to 'enquire', contact_path(painting: @painting.name), data: { turbolinks: false } %>
+    </span>
+  </div>
+</div>
