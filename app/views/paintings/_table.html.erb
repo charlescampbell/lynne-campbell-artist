@@ -19,7 +19,7 @@
         <td><%= painting.description %></td>
         <td>£<%= painting.price %></td>
         <td>edit</td>
-        <td>remove</td>
+        <td><%= link_to 'delete', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -37,7 +37,7 @@ class PaintingsController < ApplicationController
 
     respond_to do |format|
       format.html do
-        redirect_to accounts_path, notice: 'Removed!'
+        redirect_to upload_path, notice: 'Removed!'
       end
     end
   end
