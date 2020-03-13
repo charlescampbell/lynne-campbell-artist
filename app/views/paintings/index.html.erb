@@ -1,22 +1,20 @@
-<section class="portfolio-section">
-  <div class="container-fluid p-md-0 ">
-
-    <div class="row portfolios-area">
+<div class="page-section">
+  <div class="container">
+    <div class="row mb-5">
       <% @paintings.each do |painting| %>
-        <div class="mix col-lg-6 col-md-6 web">
-          <a href="" class="portfolio-item set-bg" style="background-image: url(<%= image_url(painting.image.url)%>)">
-            <div class="pi-inner">
-              <h2>
-                <%= painting.name %>
-                <hr>
-                <%= painting.description %>
-                <br>
-                £<%= painting.price %>
-              </h2>
-            </div>
-          </a>
+        <div class="col-md-6">
+          <div class="blog-item">
+            <a href="" class="portfolio-item set-bg" style="background-image: url(<%= image_url(painting.image.url)%>); height: 20rem"></a>
+
+            <article class="blog-content">
+              <h2><%= painting.name %></h2>
+              <div class="blog-meta"><%= l(painting.created_at , format: :date) %></div>
+              <p><%= painting.description %></p>
+              <a href="" class="read-more"><%= painting.price %></a>
+            </article>
+          </div>
         </div>
       <% end %>
     </div>
   </div>
-</section>
+</div>
