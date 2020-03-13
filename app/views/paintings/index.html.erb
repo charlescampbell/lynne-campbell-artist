@@ -4,13 +4,14 @@
       <% @paintings.each do |painting| %>
         <div class="col-md-6">
           <div class="blog-item">
-            <a href="" class="portfolio-item set-bg" style="background-image: url(<%= image_url(painting.image.url)%>); height: 20rem"></a>
+            <%= link_to '', show_painting_path(painting), data: { turbolinks: false }, class: 'portfolio-item set-bg', style: "background-image: url(#{image_url(painting.image.url)}); height: 20rem;" %>
 
             <article class="blog-content">
               <h2><%= painting.name %></h2>
               <div class="blog-meta"><%= l(painting.created_at , format: :date) %></div>
               <p><%= painting.description %></p>
-              <a href="" class="read-more"><%= painting.price %></a>
+
+              <%= link_to painting.price, show_painting_path(painting), class: 'read-more', data: { turbolinks: false } %>
             </article>
           </div>
         </div>

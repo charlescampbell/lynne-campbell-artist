@@ -6,10 +6,12 @@ class PaintingsController < ApplicationController
   layout 'backend', only: %i[new]
 
   def index
-    @paintings = Painting.all
+    @paintings = Painting.all.order('created_at DESC')
   end
 
   def contact; end
+
+  def show; end
 
   def new
     @paintings = Painting.all.order('created_at DESC')

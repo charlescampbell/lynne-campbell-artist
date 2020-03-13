@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'upload', to: 'paintings#new', as: :upload
   get 'contact', to: 'paintings#contact', as: :contact
   get 'sell/:id', to: 'paintings#mark_sold', as: :sell
+  get 'show/:id', to: 'paintings#show', as: :show_painting
 
   resources :paintings
 end

@@ -10,7 +10,12 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    <% if request.original_url.to_s.include?('show') %>
+      <%= render 'layouts/header' %>
+    <% else %>
+      <%= render 'layouts/gallery' %>
+    <% end %>
+
     <%= yield %>
     <%= render 'layouts/footer' %>
   </body>
