@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="card-body">
+        <h1>Upload a new painting</h1>
+        <hr>
+        <%= render 'paintings/form', painting: @painting %>
+        <br>
+        <hr>
+
+        <h1>Manage paintings</h1>
+        <%= render 'paintings/table' %>
+      </div>
+    </div>
+  </div>
+</div>

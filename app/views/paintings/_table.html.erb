@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Thumbnail</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col" colspan=2/>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @paintings.each do |painting| %>
+      <tr>
+        <th scope="row"><%= painting.id %></th>
+        <td><%= image_tag painting.image.url(:thumb) %></td>
+        <td><%= painting.name %></td>
+        <td><%= painting.description %></td>
+        <td>£<%= painting.price %></td>
+        <td>edit</td>
+        <td>remove</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
