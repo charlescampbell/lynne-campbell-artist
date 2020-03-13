@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_03_13_202724) do
     t.string "name"
     t.decimal "price"
     t.string "description"
+    t.boolean "sold", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image_file_name"

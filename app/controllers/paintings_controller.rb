@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PaintingsController < ApplicationController
-  before_action :set_painting, only: %i[show edit update destroy]
+  before_action :set_painting, only: %i[show destroy mark_sold]
 
   layout 'backend', only: %i[new]
 
@@ -12,7 +12,7 @@ class PaintingsController < ApplicationController
   def contact; end
 
   def new
-    @paintings = Painting.all
+    @paintings = Painting.all.order('created_at DESC')
     @painting = Painting.new
   end
 
@@ -40,6 +40,12 @@ class PaintingsController < ApplicationController
         redirect_to upload_path, notice: 'Removed!'
       end
     end
+  end
+
+  def mark_sold
+    @painting.sold = true
+    @painting.save
+    redirect_to upload_path, alert: 'Sold!'
   end
 
   private

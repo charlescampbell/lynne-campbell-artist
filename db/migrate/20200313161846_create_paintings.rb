@@ -6,6 +6,7 @@ class CreatePaintings < ActiveRecord::Migration[6.0]
       t.string :name
       t.decimal :price
       t.string :description
+      t.boolean :sold, default: false
 
       t.timestamps
     end
