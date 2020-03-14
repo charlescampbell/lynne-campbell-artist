@@ -7,6 +7,10 @@ advertisement easily.
 
 ## Contributing
 
+### Deployment
+
+`bundle exec cap production deploy`
+
 ### Development
 
 #### Setup
