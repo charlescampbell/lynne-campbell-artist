@@ -7,7 +7,7 @@
             <%= link_to '', show_painting_path(painting), data: { turbolinks: false }, class: 'portfolio-item set-bg', style: "background-image: url(#{image_url(painting.image.url)}); height: 20rem;" %>
 
             <article class="blog-content">
-              <h2><%= painting.name %></h2>
+              <h2><%= painting.name %> <%= '(SOLD)' if painting.sold%></h2>
               <div class="blog-meta"><%= l(painting.created_at , format: :date) %></div>
               <p><%= painting.size %> <%= painting.description %></p>
 
