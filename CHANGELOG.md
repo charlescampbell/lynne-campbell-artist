@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v0.1.1...v0.1.2) (2020-03-14)
+
+
+### Features
+
+* **paintings:** Allow users to update paintings ([3ec0ba2](https://github.com/charlescampbell/lynne-campbell-artist/commit/3ec0ba210ec2e094e7e2bd6fe64982b3b89c61f5))
+* **paintings:** Full width on show page ([daaf48a](https://github.com/charlescampbell/lynne-campbell-artist/commit/daaf48abc5896c092a18d754182992281c65aeae))
+* **paintings:** Separate the size and description ([eca29bc](https://github.com/charlescampbell/lynne-campbell-artist/commit/eca29bc4a5a93de44113747bb18f5967e5866c34))
+
+
+### Bug Fixes
+
+* **build:** Correct issue caught in deployment process ([9f45d5d](https://github.com/charlescampbell/lynne-campbell-artist/commit/9f45d5de129557054cb2c9e46e2fbf31db31e125))
+* **paintings:** Make the file upload tag required ([75a00bb](https://github.com/charlescampbell/lynne-campbell-artist/commit/75a00bb8a0eabb18dd3d6cff11207bf2500a3231))
+
 ### 0.1.1 (2020-03-13)
 
 
