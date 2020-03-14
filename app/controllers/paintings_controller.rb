@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class PaintingsController < ApplicationController
-  before_action :set_painting, only: %i[show destroy mark_sold]
+  before_action :set_painting, only: %i[edit show update destroy mark_sold]
 
-  layout 'backend', only: %i[new]
+  layout 'backend', only: %i[edit new]
 
   def index
     @paintings = Painting.all.order('created_at DESC')
@@ -12,6 +12,8 @@ class PaintingsController < ApplicationController
   def contact; end
 
   def show; end
+
+  def edit; end
 
   def new
     @paintings = Painting.all.order('created_at DESC')
@@ -28,7 +30,22 @@ class PaintingsController < ApplicationController
         end
       else
         format.html do
-          redirect_to upload_path, alert: 'Shit... something went wrong'
+          redirect_to upload_path, alert: 'Something has gone wrong!'
+        end
+      end
+    end
+  end
+
+  def update
+    respond_to do |format|
+      if @painting.update(painting_params)
+        format.html do
+          redirect_to edit_painting_path(@painting), notice: 'Updated!'
+        end
+      else
+        format.html do
+          redirect_to edit_painting_path(@painting),
+                      alert: 'Something has gone wrong!'
         end
       end
     end

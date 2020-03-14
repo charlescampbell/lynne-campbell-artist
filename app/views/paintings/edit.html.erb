@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="card-body">
+        <h1>Edit "<%= @painting.name %>"</h1>
+        <%= link_to '< back', upload_path, data: { turbolinks: false } %>
+        <hr>
+        <%= image_tag(@painting.image.url) %>
+        <hr>
+        <span>
+          <%= render 'paintings/edit_form', painting: @painting %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
