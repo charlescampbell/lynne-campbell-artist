@@ -74,6 +74,6 @@ class PaintingsController < ApplicationController
   end
 
   def painting_params
-    params.require(:painting).permit(:name, :price, :description, :image)
+    params.require(:painting).permit(:name, :price, :description, :image, :size)
   end
 end

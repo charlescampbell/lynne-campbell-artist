@@ -9,7 +9,7 @@
             <article class="blog-content">
               <h2><%= painting.name %></h2>
               <div class="blog-meta"><%= l(painting.created_at , format: :date) %></div>
-              <p><%= painting.description %></p>
+              <p><%= painting.size %> <%= painting.description %></p>
 
               <%= link_to painting.price, show_painting_path(painting), class: 'read-more', data: { turbolinks: false } %>
             </article>

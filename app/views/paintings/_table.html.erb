@@ -17,12 +17,12 @@
         <th scope="row"><%= painting.id %></th>
         <td><%= image_tag painting.image.url(:thumb) %></td>
         <td><%= painting.name %></td>
-        <td><%= painting.description %></td>
+        <td><%= painting.size %> <%= painting.description%></td>
         <td>£<%= painting.price %></td>
 
         <td><%= 'sold' if painting.sold %></td>
 
-        <td><%= link_to 'mark as sold', sell_path(painting) %></td>
+        <td><%= (link_to 'mark as sold', sell_path(painting)) if painting.sold == false %></td>
         <td><%= link_to 'edit', edit_painting_path(painting), data: { turbolinks: false } %></td>
         <td><%= link_to 'delete', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
