@@ -11,3 +11,6 @@ new-version:
 
 pr:
 	rspec && rubocop
+
+deploy:
+	bundle exec cap production deploy
