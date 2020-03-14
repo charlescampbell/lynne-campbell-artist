@@ -5,7 +5,7 @@
         <h1>Edit "<%= @painting.name %>"</h1>
         <%= link_to '< back', upload_path, data: { turbolinks: false } %>
         <hr>
-        <%= image_tag(@painting.image.url) %>
+        <%= image_tag @painting.image.url, class: 'full-image' %>
         <hr>
         <span>
           <%= render 'paintings/edit_form', painting: @painting %>
