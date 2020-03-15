@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.0.0...v1.1.0) (2020-03-15)
+
+
+### Features
+
+* **descriptions:** Create edit and delete descriptions in dropdown ([50244be](https://github.com/charlescampbell/lynne-campbell-artist/commit/50244bed161663ea18f261a81713417ab32c3670))
+* **paintings:** Show sold paintings ([53bfe2d](https://github.com/charlescampbell/lynne-campbell-artist/commit/53bfe2dacd57f4a2beca30e358ab5681e8e19829))
+
 ### [1.0.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v0.1.1...v0.1.2) (2020-03-14)
 
 
