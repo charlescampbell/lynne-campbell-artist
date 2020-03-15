@@ -9,7 +9,10 @@
       <p><%= @painting.size %> <%= @painting.description %></p>
       <%= 'This painting has sold, but if you are interested in something similar please enquire below!' if @painting.sold %>
       <hr>
-      <%= link_to 'enquire', contact_path(painting: @painting.name), data: { turbolinks: false } %>
+        <a href="mailto:lynne.campbell786@btinternet.com?subject=<%= @painting.name %>&body=<%=
+          "Hello Lynne," \
+          "I'm interested in #{@painting.name} #{@painting.description} " \
+          "advertised on your website." %>">enquire</a>
     </span>
   </div>
 </div>

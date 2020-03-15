@@ -8,7 +8,7 @@
 				<% if request.original_url.to_s.include?('contact')%>
 					<%= link_to 'Paintings', paintings_path, class: 'site-btn header-btn', data: { turbolinks: false } %>
 				<% else %>
-					<%= link_to 'Get in touch', contact_path, class: 'site-btn header-btn', data: { turbolinks: false } %>
+					<a href="mailto:lynne.campbell786@btinternet.com" class="site-btn header-btn">Get in touch</a>
 				<% end %>
 			</div>
 		</div>
