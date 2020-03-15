@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.2.2...v1.3.0) (2020-03-15)
+
+
+### Features
+
+* **metrics:** Add prometheus ([76e7390](https://github.com/charlescampbell/lynne-campbell-artist/commit/76e7390f1a686ba4438e87a95a7199b7740e290c))
+
 ### [1.2.2](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.2.1...v1.2.2) (2020-03-15)
 
 
