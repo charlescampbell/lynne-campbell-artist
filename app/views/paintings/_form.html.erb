@@ -19,11 +19,7 @@
 
     <div class="form-group col-md-8">
       <label for="inputState">Description</label>
-      <%= form.select(:description, options_for_select([
-          ['acrylic on canvas mounted and framed', 'acrylic on canvas mounted and framed'],
-          ['watercolour', 'watercolour'],
-          ['pen and wash', 'pen and wash']
-        ]), {}, {class: "form-control"}) %>
+      <%= form.collection_select :description, Description.all,:description,:description, {}, class: 'form-control' %>
     </div>
   </div>
 

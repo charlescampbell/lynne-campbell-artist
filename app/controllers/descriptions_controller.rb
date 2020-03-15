@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class DescriptionsController < ApplicationController
   before_action :set_description, only: %i[edit update destroy]
 
