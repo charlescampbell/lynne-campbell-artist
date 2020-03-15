@@ -17,6 +17,7 @@ class PaintingsController < ApplicationController
 
   def new
     @paintings = Painting.all.order('created_at DESC')
+    @descriptions = Description.all.order('created_at DESC')
     @painting = Painting.new
   end
 
@@ -31,6 +32,25 @@ class PaintingsController < ApplicationController
       else
         format.html do
           redirect_to upload_path, alert: 'Something has gone wrong!'
+        end
+      end
+    end
+  end
+
+  def add_description
+    @description = Description.new(description_params)
+
+    respond_to do |format|
+      if @description.save
+        format.html do
+          redirect_to upload_path,
+                      notice: 'Description was successfully created.'
+        end
+        format.json { render :show, status: :created, location: @description }
+      else
+        format.html { render :new }
+        format.json do
+          render json: @description.errors, status: :unprocessable_entity
         end
       end
     end
@@ -75,5 +95,9 @@ class PaintingsController < ApplicationController
 
   def painting_params
     params.require(:painting).permit(:name, :price, :description, :image, :size)
+  end
+
+  def description_params
+    params.permit(:description)
   end
 end

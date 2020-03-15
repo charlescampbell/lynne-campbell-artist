@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'paintings#contact', as: :contact
   get 'sell/:id', to: 'paintings#mark_sold', as: :sell
   get 'show/:id', to: 'paintings#show', as: :show_painting
+  post 'description/new', to: 'paintings#add_description', as: :create_description
 
+  resources :descriptions
   resources :paintings
 end
