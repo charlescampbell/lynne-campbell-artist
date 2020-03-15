@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.2.1...v1.2.2) (2020-03-15)
+
+
+### Bug Fixes
+
+* **mailto:** Add space ([5976dc7](https://github.com/charlescampbell/lynne-campbell-artist/commit/5976dc79ef26539eb3830147e676832a854b1d45))
+
 ### [1.2.1](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.2.0...v1.2.1) (2020-03-15)
 
 
