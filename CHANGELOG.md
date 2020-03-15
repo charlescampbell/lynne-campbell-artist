@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.1.0...v1.2.0) (2020-03-15)
+
+
+### Features
+
+* **contact:** Removed contact for for mailto as requested ([887c768](https://github.com/charlescampbell/lynne-campbell-artist/commit/887c768a7f7316bc4b8ce8d676ff15ee12c85a23))
+
 ## [1.1.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.0.0...v1.1.0) (2020-03-15)
 
 
