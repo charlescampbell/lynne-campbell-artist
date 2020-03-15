@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-lg-8 col-md-9">
 				<% if request.original_url.to_s.include?('contact')%>
-					<%= link_to 'Paintings', paintings_path, class: 'site-btn header-btn', data: { turbolinks: false } %>
+					<%= link_to 'Paintings', paintings_path, class: 'site-btn header-btn' %>
 				<% else %>
 					<a href="mailto:lynne.campbell786@btinternet.com" class="site-btn header-btn">Get in touch</a>
 				<% end %>

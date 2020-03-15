@@ -19,7 +19,7 @@ gem 'pg'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'sass-rails', '>= 6'
-gem 'turbolinks', '~> 5'
+gem 'turbolinks'
 gem 'webpacker', '~> 4.0'
 
 group :development, :test do
