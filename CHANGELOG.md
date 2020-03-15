@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.2.0...v1.2.1) (2020-03-15)
+
+
+### Bug Fixes
+
+* **jquery:** Fix turbolinks ([6ba7ac9](https://github.com/charlescampbell/lynne-campbell-artist/commit/6ba7ac9d1ecfc1fc19d6bf94fdd1d2409f82631e))
+
 ## [1.2.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.1.0...v1.2.0) (2020-03-15)
 
 
