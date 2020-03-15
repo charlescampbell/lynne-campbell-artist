@@ -10,7 +10,7 @@
       <%= 'This painting has sold, but if you are interested in something similar please enquire below!' if @painting.sold %>
       <hr>
         <a href="mailto:lynne.campbell786@btinternet.com?subject=<%= @painting.name %>&body=<%=
-          "Hello Lynne," \
+          "Hello Lynne, " \
           "I'm interested in #{@painting.name} #{@painting.description} " \
           "advertised on your website." %>">enquire</a>
     </span>
