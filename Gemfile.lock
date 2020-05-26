@@ -264,7 +264,7 @@ DEPENDENCIES
   paperclip (~> 6.0.0)
   pg
   prometheus-client
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.1)
   sass-rails (>= 6)
   selenium-webdriver
