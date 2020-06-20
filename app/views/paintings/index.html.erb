@@ -11,7 +11,7 @@
               <div class="blog-meta"><%= l(painting.created_at , format: :date) %></div>
               <p><%= painting.size %> <%= painting.description %></p>
 
-              <%= link_to painting.price, show_painting_path(painting), class: 'read-more' %>
+              <%= link_to painting.price, show_painting_path(painting), class: 'read-more', style: sold(painting) %>
             </article>
           </div>
         </div>
