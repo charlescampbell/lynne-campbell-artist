@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.3.1...v1.4.0) (2020-06-20)
+
+
+### Features
+
+* **paintings:** Strikethrough price when painting has sold ([2e38316](https://github.com/charlescampbell/lynne-campbell-artist/commit/2e383168077dd3e09410d98ab9339f116eb2dc84))
+
 ### [1.3.1](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.3.0...v1.3.1) (2020-05-26)
 
 ## [1.3.0](https://github.com/charlescampbell/lynne-campbell-artist/compare/v1.2.2...v1.3.0) (2020-03-15)
